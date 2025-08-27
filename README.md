@@ -1,17 +1,32 @@
-# Intelligent Master Node for Predictive Home Automation Control using AI and Machine Learning
+# Smartsync: Intelligent Master Node for Predictive Home Automation
 
 ## 📌 Project Overview
-This project develops an **AI-enabled master node** for home automation that predicts user needs and optimizes smart device control.  
-The system leverages **ESP32 microcontroller** and **machine learning** models to analyze environmental data and user behavior for improved energy efficiency and convenience.
+Smartsync is a **home automation project** where multiple ESP32 nodes communicate in a master–slave network and connect to the **AWS IoT Cloud**.  
+The system is being extended with **AI/ML models** to predict user behavior, optimize device usage, and save energy while improving user comfort.
 
 ---
 
-## 🎯 Goals
-- Create a **centralized master node** to manage smart devices.
-- Use **AI/ML models** to predict user actions.
-- Control devices such as lighting, climate systems, and security.
-- Continuously **learn from user feedback** for adaptive performance.
+## ✅ Current Progress
+- **ESP32 Network Setup**
+  - Configured **3 ESP32 boards**: 1 master + 2 slaves.
+  - Slave 1 → Connected to **DHT11 sensor** (temperature & humidity).  
+  - Slave 2 → Connected to **Light sensor**.  
+  - Master → Receives sensor data from slaves and controls communication(**Using ESP-NOW & MQTT Protocols).
 
+- **Cloud Integration**
+  - Master node publishes sensor readings to **AWS IoT Core**.
+  - Data successfully saved in **Amazon Cloud** for analysis and logging.
+
+---
+
+## 🚧 Next Steps (Work in Progress)
+- **AI/ML Integration**
+  - Train predictive models to learn from sensor data and user patterns.
+  - Deploy inference either on:
+    - AWS Lambda (cloud-side)  
+    - or ESP32 (edge, via TinyML/TFLite).
+  - Predict **optimal lighting/HVAC settings** to reduce energy use and enhance comfort.
+  
 ---
 
 ## 🔧 Features
