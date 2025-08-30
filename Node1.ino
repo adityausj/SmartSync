@@ -19,7 +19,7 @@ typedef struct struct_message {
 struct_message sensorData;
 
 // Define the MAC address of the Master Node
-uint8_t masterNodeMAC[] = {0x2C, 0xBC, 0xBB, 0x0C, 0x3A, 0x50};  // MAC address of the Master Node
+uint8_t masterNodeMAC[] = {};  // MAC address of the Master Node
 
 void setup() {
   Serial.begin(115200);
