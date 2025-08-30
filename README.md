@@ -11,7 +11,7 @@ The system is being extended with **AI/ML models** to predict user behavior, opt
   - Configured **3 ESP32 boards**: 1 master + 2 slaves.
   - Slave 1 → Connected to **DHT11 sensor** (temperature & humidity).  
   - Slave 2 → Connected to **Light sensor**.  
-  - Master → Receives sensor data from slaves and controls communication(**Using ESP-NOW & MQTT Protocols).
+  - Master → Receives sensor data from slaves and controls communication(**Using ESP-NOW & MQTT Protocols**).
 
 - **Cloud Integration**
   - Master node publishes sensor readings to **AWS IoT Core**.
@@ -22,10 +22,6 @@ The system is being extended with **AI/ML models** to predict user behavior, opt
 ## 🚧 Next Steps (Work in Progress)
 - **AI/ML Integration**
   - Train predictive models to learn from sensor data and user patterns.
-  - Deploy inference either on:
-    - AWS Lambda (cloud-side)  
-    - or ESP32 (edge, via TinyML/TFLite).
-  - Predict **optimal lighting/HVAC settings** to reduce energy use and enhance comfort.
   
 ---
 
@@ -47,6 +43,6 @@ The system is being extended with **AI/ML models** to predict user behavior, opt
 ---
 
 ## 👨‍💻 Author
-**Aditya Atul Makwana**  
+**Aditya Makwana**  
 Master’s in Electrical and Electronics, Cal Poly Pomona  
 
