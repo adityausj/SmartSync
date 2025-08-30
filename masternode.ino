@@ -6,7 +6,7 @@
 // WiFi and AWS credentials
 const char* ssid = ""; //enter your wifi ssid
 const char* password = ""; // eneter your password 
-const char* awsEndpoint = "a1ftrqnxm6iffk-ats.iot.us-east-2.amazonaws.com";
+const char* awsEndpoint = "";// Enter AWS endpoint
 
 // AWS IoT device credentials that is provide by AWS when you generate certificated
 const char* rootCA =  R"EOF(
